@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data and model artifacts
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.arrow
+*.pkl
+*.pt
+*.pth
+*.safetensors
+*.bin
+models/
+checkpoints/
+outputs/
+runs/
+wandb/
+mlruns/
+
+# Hugging Face caches
+.cache/
+huggingface/
+
+# Environment / secrets
+.env
+.env.*
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
