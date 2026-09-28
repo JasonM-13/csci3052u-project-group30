@@ -22,3 +22,13 @@ A total of 3 .jsonl files, one for each split.
 
 ## Training and eval
 Use `evaluate_sentiment.py`.
+
+## License
+
+The data comes from [toastynews/openrice-senti](https://github.com/toastynews/openrice-senti),
+licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). We credit that repo
+as the source. The original .tsv files were converted to .jsonl by CantoNLU (`convert_to_jsonl.py`).
+
+Restriction: the reviews were scraped from OpenRice and belong to their authors. CC-BY-4.0 covers
+the dataset packaging, not the review text itself, so this data is used for coursework
+only, and should not be redistributed or used commercially.
