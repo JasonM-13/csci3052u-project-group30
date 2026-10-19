@@ -56,3 +56,13 @@ overlap = valid_set.intersection(train_set)
 print(f"overlap: {len(overlap)}")
 print(f"Macro F1: {macro_f1:.4f}")
 print(classification_report(valid_label, valid_pred))
+
+
+wrong = [(s, t, p) for s, t, p in zip(valid_texts, valid_label, valid_pred) if t != p]
+print(len(wrong))
+
+from collections import Counter
+
+pairs = Counter((t, p) for s, t, p in wrong)
+for (t, p), n in pairs.most_common():
+    print(f"label {t} ->  predicted label {p}: {n}")
