@@ -1,0 +1,29 @@
+# Tested with Python 3.14.4 on Windows (Git Bash)
+scikit-learn==1.9.1
+numpy==2.5.4
+scipy==1.18.1
+demo [https://drive.google.com/file/d/11ktv2uJpyC9BpMlTcgV6EVfJZProlkyg/view?usp=sharing]
+#1)
+steps to run first check Git and python version, should have git installed and python at least 3
+#2)clone it:
+git clone https://github.com/JasonM-13/csci3052u-project-group30.git demo-test
+cd demo-test && ls
+
+#3)
+run in venv, if not venv, install it.
+python -m venv .venv
+source .venv/Scripts/activate
+
+#4)install scikit:
+
+pip install scikit-learn
+
+#5) run it, should see 0.1667, predicting smile only:
+cd data/sentiment
+python naive_baseline.py
+#6) run the LR baseline:
+python lr_baseline.py
+git status
+
+C=3 and C=10 should be close. 
+C=10 might be C=3 depending on scikit version
