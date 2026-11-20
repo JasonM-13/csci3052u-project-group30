@@ -1,0 +1,20 @@
+{
+  "model": "bert-base-multilingual-cased",
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "epochs": 3,
+  "max_length": 512,
+  "seed": 42,
+  "fp16": true,
+  "train_size": 9999,
+  "train_reviews_cut_at_max_length": 855,
+  "train_seconds": 406.5,
+  "valid_macro_f1_per_epoch": [
+    0.739,
+    0.7672,
+    0.7764
+  ],
+  "train_macro_f1": 0.9172,
+  "valid_macro_f1": 0.7764,
+  "test_macro_f1": 0.7797
+}
