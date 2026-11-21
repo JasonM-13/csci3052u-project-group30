@@ -1,0 +1,27 @@
+{
+  "model": "bert-base-multilingual-cased",
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "per_device_batch_size": 8,
+  "grad_accum": 2,
+  "epochs": 3,
+  "max_length": 512,
+  "seed": 46,
+  "fp16": true,
+  "train_size": 9999,
+  "train_reviews_cut_at_max_length": 851,
+  "test_reviews_cut_at_max_length": 87,
+  "train_seconds": 743.2,
+  "valid_macro_f1_per_epoch": [
+    0.7061,
+    0.7765,
+    0.7641
+  ],
+  "train_macro_f1": 0.898,
+  "valid_macro_f1": 0.7641,
+  "test_macro_f1": 0.7982,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_gpu_memory_gb": 4.83,
+  "torch_version": "2.14.1+cu130",
+  "transformers_version": "5.23.0"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "hon9kon9ize/bert-base-cantonese",
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "per_device_batch_size": 8,
+  "grad_accum": 2,
+  "epochs": 3,
+  "max_length": 512,
+  "seed": 46,
+  "fp16": true,
+  "train_size": 9999,
+  "train_reviews_cut_at_max_length": 849,
+  "test_reviews_cut_at_max_length": 88,
+  "train_seconds": 671.5,
+  "valid_macro_f1_per_epoch": [
+    0.7942,
+    0.8004,
+    0.7942
+  ],
+  "train_macro_f1": 0.9545,
+  "valid_macro_f1": 0.7942,
+  "test_macro_f1": 0.788,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_gpu_memory_gb": 3.64,
+  "torch_version": "2.14.1+cu130",
+  "transformers_version": "5.23.0"
+}

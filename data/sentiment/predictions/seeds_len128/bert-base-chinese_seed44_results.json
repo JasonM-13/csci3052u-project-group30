@@ -1,0 +1,27 @@
+{
+  "model": "bert-base-chinese",
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "per_device_batch_size": 8,
+  "grad_accum": 2,
+  "epochs": 3,
+  "max_length": 128,
+  "seed": 44,
+  "fp16": true,
+  "train_size": 9999,
+  "train_reviews_cut_at_max_length": 9743,
+  "test_reviews_cut_at_max_length": 970,
+  "train_seconds": 288.3,
+  "valid_macro_f1_per_epoch": [
+    0.7181,
+    0.716,
+    0.7103
+  ],
+  "train_macro_f1": 0.9106,
+  "valid_macro_f1": 0.7103,
+  "test_macro_f1": 0.7348,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_gpu_memory_gb": 2.33,
+  "torch_version": "2.14.1+cu130",
+  "transformers_version": "5.23.0"
+}
