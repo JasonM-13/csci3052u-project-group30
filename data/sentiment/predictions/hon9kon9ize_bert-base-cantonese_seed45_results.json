@@ -1,0 +1,20 @@
+{
+  "model": "hon9kon9ize/bert-base-cantonese",
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "epochs": 3,
+  "max_length": 512,
+  "seed": 45,
+  "fp16": true,
+  "train_size": 9999,
+  "train_reviews_cut_at_max_length": 860,
+  "train_seconds": 389.5,
+  "valid_macro_f1_per_epoch": [
+    0.7867,
+    0.7872,
+    0.7953
+  ],
+  "train_macro_f1": 0.9488,
+  "valid_macro_f1": 0.7953,
+  "test_macro_f1": 0.7981
+}

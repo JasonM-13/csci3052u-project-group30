@@ -1,0 +1,20 @@
+{
+  "model": "bert-base-chinese",
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "epochs": 3,
+  "max_length": 512,
+  "seed": 44,
+  "fp16": true,
+  "train_size": 9999,
+  "train_reviews_cut_at_max_length": 860,
+  "train_seconds": 389.3,
+  "valid_macro_f1_per_epoch": [
+    0.7927,
+    0.8017,
+    0.7945
+  ],
+  "train_macro_f1": 0.9461,
+  "valid_macro_f1": 0.7945,
+  "test_macro_f1": 0.7972
+}
