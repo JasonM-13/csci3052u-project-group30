@@ -55,12 +55,12 @@ predictions_by_model = {"Logistic regression": np.array(predictions)}
 
 # 2. Load the saved BERT test predictions (one training seed each, seed 42).
 bert_files = {
-    "Multilingual BERT": "bert-base-multilingual-cased_test_preds.jsonl",
-    "Chinese BERT": "bert-base-chinese_test_preds.jsonl",
-    "Cantonese BERT": "hon9kon9ize_bert-base-cantonese_test_preds.jsonl",
+    "Multilingual BERT": "bert-base-multilingual-cased_seed42_test_preds.jsonl",
+    "Chinese BERT": "bert-base-chinese_seed42_test_preds.jsonl",
+    "Cantonese BERT": "hon9kon9ize_bert-base-cantonese_seed42_test_preds.jsonl",
 }
 for name, filename in bert_files.items():
-    rows = read_jsonl(folder / "predictions" / filename)
+    rows = read_jsonl(folder / "predictions" / "trainer_batch16" / filename)
     by_id = {row["id"]: row for row in rows}
     if len(rows) != len(test) or any(
         by_id[i]["label"] != label for i, label in zip(test_ids, test_labels)

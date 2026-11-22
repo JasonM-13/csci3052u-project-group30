@@ -129,9 +129,9 @@ t0 = time.time()
 trainer.train()
 train_seconds = time.time() - t0
 
-os.makedirs("predictions", exist_ok=True)
+os.makedirs("predictions/trainer_batch16", exist_ok=True)
 out_prefix = (
-    "predictions/"
+    "predictions/trainer_batch16/"
     + model_name.replace("/", "_")
     + f"_seed{SEED}"
     + ("_smoke" if SMOKE else "")
